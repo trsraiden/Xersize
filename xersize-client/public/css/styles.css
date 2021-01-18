@@ -1,0 +1,353 @@
+* {
+    font-size: 1.15rem;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+hr{
+    background-color: #D11C1C;
+    height: 4px;
+    /* need to do the className styling for hrs to get it to take size 4px */
+}  
+
+.notices{
+    text-align: center;
+}
+
+.sessions7Days{
+    width: 100%;
+}
+
+.sessionsChartTitle{
+    text-align: center;
+}
+
+.rowDay{
+    text-align: center;
+}
+
+.markerSection{
+    font-family: Permanent Marker, cursive;
+}
+
+.robotoSection{
+    font-family: Roboto Condensed, sans-serif;
+}
+
+.btn {
+    margin: 15px;
+}
+
+.setRepsDiv{
+    text-align: center;
+}
+
+.repsDiv{
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.setReps{
+    font-size: 1.25rem;
+}
+
+.increaseReps{
+    float: left;
+}
+
+.decreaseReps{
+    float: right;
+}
+/* session timer */
+.setTimerDiv{
+    text-align: center;
+    position: fixed;
+    bottom:0;
+    left:20%;
+    right:20%;
+    margin: auto;
+    border: 5px solid #D11C1C;
+    border-radius: .5rem;
+}
+
+.timerDiv{
+    display:inline-block;
+    margin:0 2px;
+    min-width: 120px;
+}
+
+.chartDiv{
+    background-color: #ffffff;
+}
+
+.buttonsDiv{
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+.buttonDiv{
+    display: flex;
+}
+
+.generalButton{
+    margin: 15px 0px;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 3px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 100rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    color: #6DF0F5;
+    border-color: #6df0f5;
+}
+
+.generalButton:focus, .generalButton:active {
+    outline-color: #6df0f5;
+}
+
+.generalButton:hover {
+    color: #000000;
+    text-decoration: none;
+    background-color:#6DF0F5;
+    border-color: #6DF0F5;
+}
+
+.deleteButton{
+    margin: 15px 0px;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 3px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 100rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    color: #D11C1C;
+    border-color: #D11C1C;
+}
+
+.deleteButton:focus, .deleteButton:active {
+    outline-color: #D11C1C;
+}
+
+.deleteButton:hover {
+    color: #000000;
+    text-decoration: none;
+    background-color:#D11C1C;
+    border-color: #D11C1C;
+}
+
+.startButton{
+    margin: 15px 0px;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 3px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 100rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    color: #00eb4d;
+    border-color: #00eb4d;
+}
+
+.startButton:focus, .startButton:active {
+    outline-color: #00eb4d;
+}
+
+.startButton:active{
+    margin: 15px 0px;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 3px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 100rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    color: #00eb4d;
+    border-color: #00eb4d;
+}
+
+.startButton:hover {
+    color: #000000;
+    text-decoration: none;
+    background-color:#00eb4d;
+    border-color: #00eb4d;
+}
+
+.container{
+    padding: 0px;
+    margin: 0px;
+}
+
+/* card colouring */
+.cardStyling{
+    background-color: #000000;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    padding:1rem;
+}
+
+.cardBody {
+    flex: 1 1 auto;
+    min-height: 1px;
+    background-color: #000000;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-clip: border-box;
+    border: 5px solid #D11C1C;
+    border-radius: .5rem;
+    padding: .5rem;
+}
+
+.cardTitle {
+    text-decoration: underline;
+}
+
+.newRoutine{
+    text-align: center;
+}
+
+/* start welcome.component.js */
+.welcomeDisplay{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.welcomeWebTitle {
+    padding:3rem 0 0;
+    font-family: Audiowide, cursive;
+    text-shadow: -5px 1px 3px #6df0f5,-7px 2px 0px #D11C1C;
+    text-align: center;
+    font-size: 5rem;
+}
+
+.welcomeGreetingDiv {
+    padding:2rem 0 3rem;
+    text-align: center;
+}
+
+.welcomeWebGreeting {
+    padding:2rem;
+    font-family: Audiowide, cursive;
+    font-size: 1rem;
+}
+
+.enterAppDiv {
+    padding:2rem 0 3rem;
+}
+
+/* end welcome.component.js */
+
+/* start narbar.component.js */
+.navLogoutButton{
+    margin: 0px;
+    border: none;
+}
+
+.navLogoutButton:hover{
+    text-decoration: none;
+    color: #ffffff;
+    text-shadow: -5px 1px 3px #6DF0F5,-7px 2px 3px #D11C1C;
+}
+
+.navWebTitle {
+    color: #ffffff;
+    font-family: Audiowide, cursive;
+    text-shadow: -5px 1px 3px #6DF0F5,-7px 2px 0px #D11C1C;
+    text-align: center;
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 1.9rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+
+.navWebTitle:hover{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.navLink{
+    padding:0px 10px;
+    color: #ffffff ;
+}
+
+.navLink:hover{
+    text-decoration: none;
+    color: #ffffff;
+    text-shadow: -5px 1px 3px #6DF0F5,-7px 2px 3px #D11C1C;
+}
+
+.navbarColour{
+    background-color:#000000;
+    color: #ffffff ;
+}
+
+.navigationHR{
+    padding: 0px;
+    margin:0px 0px 5px;
+}
+
+/* end narbar.component.js */
+
+/* start Home.js */
+.homeIcon{
+    font-size: 7.5rem;
+    padding-bottom: 10px;
+}
+
+.userHomeIcon{
+    font-size: 6rem;
+    padding-bottom: 10px;
+}
+
+.appSection{
+    padding: 1.5rem 0 1rem;
+}
+
+.homeSectionDiv{
+    text-align: center;
+    border: 10px;
+}
+/* end Home.js */
+
+/* start Footer.js */
+.footer{
+    padding-top: 90px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+/* end Footer.js */
