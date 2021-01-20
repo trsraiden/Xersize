@@ -5,8 +5,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 //authenticate
 import Login from "./components/Login";
-// import Signup from "./Signup";
-// import ForgotPassword from "./ForgotPassword";
+import Signup from "./components/Signup";
+import ForgotPassword from "./components/ForgotPassword";
 import PrivateRoute from './components/PrivateRoute';
 import Home from "./components/Home";
 import Footer from './components/Footer'
@@ -37,8 +37,8 @@ function App() {
             {/* <PrivateRoute path="/routinecreate" component={RoutinesManager}/> */}
             {/* <PrivateRoute path="/routineedit" component={RoutinesManager}/> */}
             <Route exact path="/" component={Login}/>
-            {/* <Route path="/signup" component={Signup}/> */}
-            {/* <Route path="/forgotPassword" component={ForgotPassword}/> */}
+            <Route path="/signup" component={Signup}/>
+            <Route path="/forgotPassword" component={ForgotPassword}/>
           </Switch>
         </UserSessionProvider>
       <Footer/>
