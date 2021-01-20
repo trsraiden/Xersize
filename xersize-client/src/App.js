@@ -19,7 +19,7 @@ import RoutineDashboard from "./components/routine-dashboard.component";
 import RoutineManager from "./components/routine-manager.component"
 // //sessions
 import SessionDashboard from "./components/session-dashboard.component";
-// import SessionManager from "./components/session-manager.component"
+import SessionManager from "./components/session-manager.component"
 
 function App() {
   return (
@@ -30,8 +30,8 @@ function App() {
             <PrivateRoute path="/manageAccount" component={ManageAccount}/>
             <PrivateRoute path="/changepassword" component={ChangePassword}/>
             <PrivateRoute path="/deleteaccount" component={DeleteAccount}/>
-            {/* <PrivateRoute path="/workout" component={SessionsManager}/> */}
-            {/* <PrivateRoute path="/workoutedit" component={SessionsManager}/> */}
+            <PrivateRoute path="/workout" component={SessionManager}/>
+            <PrivateRoute path="/workoutedit" component={SessionManager}/>
             <PrivateRoute path="/sessions" component={SessionDashboard}/>
             <PrivateRoute path="/routines" component={RoutineDashboard}/>
             <PrivateRoute path="/routinecreate" component={RoutineManager}/>
