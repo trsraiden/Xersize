@@ -31,7 +31,7 @@ export function UserSessionProvider({children}) {
     }
 
     function googleLogin(){
-       auth.signInWithRedirect(googleAuthProvider)
+       return auth.signInWithRedirect(googleAuthProvider)
     }
 
     function logout(){

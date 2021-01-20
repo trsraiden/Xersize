@@ -18,6 +18,47 @@ router.route('/deleteUser').delete((req,res)=>{
 
 module.exports = router;
 
+// router.route('/signup').post((req,res)=>{
+//     const email = req.body.email;
+//     const password = req.body.password;
+//     auth.createUserWithEmailAndPassword(email, password)
+// });
+
+// router.route('/login').post((req,res)=>{
+//     return auth.signInWithEmailAndPassword(email, password)
+// });
+
+// router.route('/googleLogin').post((req,res)=>{
+//     return auth.signInWithRedirect(googleAuthProvider)
+// });
+
+// router.route('/logout').post((req,res)=>{
+//     return auth.signOut()
+// });
+
+// router.route('/resetPassword').post((req,res)=>{
+//     return auth.sendPasswordResetEmail(email)
+// });
+
+// router.route('/updatePassword').post((req,res)=>{
+
+
+//     return currentUser.updatePassword(password)
+// });
+
+// router.route('/deleteAccount').delete((req,res)=>{
+//     axios.delete('/users/deleteUser',{data:{username:currentUser.email}})
+//         return currentUser.delete()
+// });
+
+// router.route('/authStateChange').delete((req,res)=>{
+//     const unsubscribe = auth.onAuthStateChanged(user=>{
+//         setCurrentUser(user)
+//         setLoading(false)
+//     })
+//     return () => unsubscribe
+// });
+
 // //Create - Specific User
 // router.route('/addUser').post((req,res)=>{
 //     const username = req.body.username;
