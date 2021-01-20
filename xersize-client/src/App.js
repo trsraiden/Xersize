@@ -16,10 +16,10 @@ import DeleteAccount from "./components/DeleteAccount";
 import ChangePassword from "./components/ChangePassword";
 // //routines
 import RoutineDashboard from "./components/routine-dashboard.component";
-// import RoutineManager from "./routine-manager.component"
+import RoutineManager from "./components/routine-manager.component"
 // //sessions
 import SessionDashboard from "./components/session-dashboard.component";
-// import SessionManager from "./session-manager.component"
+// import SessionManager from "./components/session-manager.component"
 
 function App() {
   return (
@@ -34,8 +34,8 @@ function App() {
             {/* <PrivateRoute path="/workoutedit" component={SessionsManager}/> */}
             <PrivateRoute path="/sessions" component={SessionDashboard}/>
             <PrivateRoute path="/routines" component={RoutineDashboard}/>
-            {/* <PrivateRoute path="/routinecreate" component={RoutinesManager}/> */}
-            {/* <PrivateRoute path="/routineedit" component={RoutinesManager}/> */}
+            <PrivateRoute path="/routinecreate" component={RoutineManager}/>
+            <PrivateRoute path="/routineedit" component={RoutineManager}/>
             <Route exact path="/" component={Login}/>
             <Route path="/signup" component={Signup}/>
             <Route path="/forgotPassword" component={ForgotPassword}/>
