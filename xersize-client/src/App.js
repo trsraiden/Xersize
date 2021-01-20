@@ -11,9 +11,9 @@ import PrivateRoute from './components/PrivateRoute';
 import Home from "./components/Home";
 import Footer from './components/Footer'
 // //manage account
-// import ManageAccount from "./ManageAccount";
-// import DeleteAccount from "./DeleteAccount";
-// import ChangePassword from "./ChangePassword";
+import ManageAccount from "./components/ManageAccount";
+import DeleteAccount from "./components/DeleteAccount";
+import ChangePassword from "./components/ChangePassword";
 // //routines
 // import RoutinesDashboard from "./routine-dashboard.component";
 // import RoutinesManager from "./routine-manager.component"
@@ -27,9 +27,9 @@ function App() {
         <UserSessionProvider>
           <Switch>
             <PrivateRoute path="/home" component={Home}/>
-            {/* <PrivateRoute path="/manageAccount" component={ManageAccount}/> */}
-            {/* <PrivateRoute path="/changepassword" component={ChangePassword}/> */}
-            {/* <PrivateRoute path="/deleteaccount" component={DeleteAccount}/> */}
+            <PrivateRoute path="/manageAccount" component={ManageAccount}/>
+            <PrivateRoute path="/changepassword" component={ChangePassword}/>
+            <PrivateRoute path="/deleteaccount" component={DeleteAccount}/>
             {/* <PrivateRoute path="/workout" component={SessionsManager}/> */}
             {/* <PrivateRoute path="/workoutedit" component={SessionsManager}/> */}
             {/* <PrivateRoute path="/sessions" component={SessionsDashboard}/> */}
