@@ -15,11 +15,11 @@ import ManageAccount from "./components/ManageAccount";
 import DeleteAccount from "./components/DeleteAccount";
 import ChangePassword from "./components/ChangePassword";
 // //routines
-// import RoutinesDashboard from "./routine-dashboard.component";
-// import RoutinesManager from "./routine-manager.component"
+import RoutineDashboard from "./components/routine-dashboard.component";
+// import RoutineManager from "./routine-manager.component"
 // //sessions
-// import SessionsDashboard from "./session-dashboard.component";
-// import SessionsManager from "./session-manager.component"
+// import SessionDashboard from "./session-dashboard.component";
+// import SessionManager from "./session-manager.component"
 
 function App() {
   return (
@@ -33,7 +33,7 @@ function App() {
             {/* <PrivateRoute path="/workout" component={SessionsManager}/> */}
             {/* <PrivateRoute path="/workoutedit" component={SessionsManager}/> */}
             {/* <PrivateRoute path="/sessions" component={SessionsDashboard}/> */}
-            {/* <PrivateRoute path="/routines" component={RoutinesDashboard}/> */}
+            <PrivateRoute path="/routines" component={RoutineDashboard}/>
             {/* <PrivateRoute path="/routinecreate" component={RoutinesManager}/> */}
             {/* <PrivateRoute path="/routineedit" component={RoutinesManager}/> */}
             <Route exact path="/" component={Login}/>
