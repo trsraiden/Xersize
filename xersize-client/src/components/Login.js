@@ -49,7 +49,7 @@ export default function Login() {
     <div className='welcomeDisplay markerSection'>
         <div className='col-sm-5' >
               <div>
-                  <h1 className='welcomeWebTitle robotoSection' >Xersize Tracker</h1>
+                  <h1 className='welcomeWebTitle robotoSection' >Xersize</h1>
               </div>
 
               <div className='welcomeGreetingDiv'>
