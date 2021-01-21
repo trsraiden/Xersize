@@ -70,6 +70,13 @@ hr{
     border-radius: .5rem;
 }
 
+@media screen and (min-width: 400px){
+    .setTimerDiv{
+        left:0;
+        right:0;
+    }
+}
+
 .timerDiv{
     display:inline-block;
     margin:0 2px;
