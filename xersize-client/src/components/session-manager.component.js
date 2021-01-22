@@ -283,6 +283,7 @@ export default class SessionManager extends Component{
         
         const session = {
             routineName:this.state.routineName,
+            routineNotes:this.state.routineNotes,
             username:this.props.user,
             routineID:this.state.routineID,
             sessionDetails:this.state.sessionDetails,
@@ -306,6 +307,8 @@ export default class SessionManager extends Component{
     render(){
         return(
             <div className='markerSection container' >
+                <h2>{this.state.routineName}</h2>
+                <h2>{this.state.routineNotes}</h2>
                 {this.state.submitError && <Alert variant='danger'>{this.state.submitError}</Alert>}
                 {this.state.create ?
                 <form onSubmit={this.onEndSession.bind(this)}>

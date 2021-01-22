@@ -4,6 +4,7 @@ const Schema = mongoose.Schema;
 
 const sessionSchema = new Schema({
     routineName:String,
+    routineNotes:String,
     username:String,
     routineID:String,
     sessionDetails:[],

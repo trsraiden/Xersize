@@ -5,6 +5,7 @@ let Session = require('../models/session.model.js');
 //Create - Specific Session
 router.route('/createSession').post((req,res)=>{
     const routineName = req.body.routineName;
+    const routineNotes = req.body.routineNotes;
     const username = req.body.username;
     const routineID = req.body.routineID;
     const sessionDetails = req.body.sessionDetails;
@@ -16,6 +17,7 @@ router.route('/createSession').post((req,res)=>{
 
     const newSession = new Session({
         routineName,
+        routineNotes,
         username,
         routineID,
         sessionDetails,
