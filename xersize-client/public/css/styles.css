@@ -38,6 +38,10 @@ hr{
     font-size: 1.25rem;
 }
 
+.fullButton{
+    width: 100%;
+}
+
 .buttonsDiv{
     width: 100%;
     display: inline-flex;
