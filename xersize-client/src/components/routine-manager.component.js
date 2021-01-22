@@ -25,6 +25,7 @@ export default class RoutinesManager extends Component{
     routinePlan(){
         return this.state.routineTemplate.map((e, i) =>
             <div key={i} className='container'>
+            {/* version 1 */}
                 {/* <div className='form-group'>
                         <label htmlFor='exerciseName'>Exercise Name</label>
                         <input className='form-control' id='exerciseName' type='text' value={this.state.routineTemplate[i].exercise||''} onChange={this.handleExerciseChange.bind(this, i)} required></input>
@@ -57,7 +58,8 @@ export default class RoutinesManager extends Component{
                     </div>
                 </div>
                 <hr></hr> */}
-                <div className='row'>
+            {/* version 2 */}
+                {/* <div className='row'>
                     <div className='col-md-4 exerciseNameColDiv '>
                         <div className='exerciseNameDiv'>
                             <label htmlFor='exerciseName'>Exercise Name</label>
@@ -87,6 +89,40 @@ export default class RoutinesManager extends Component{
                         </div>
                         <div className='exerciseDeleteDiv'>
                             <button className='deleteButton exerciseDelete fullButton' value='remove' type='button' onClick={this.onDelete.bind(this, i)}>Delete</button>
+                        </div>
+                    </div>
+                </div> */}
+            {/* version 3 */}
+            <div className='row'>
+                    <div className='col-md-6'>
+                        <div >
+                            <label htmlFor='exerciseName'>Exercise Name</label>
+                            <input className='form-control' id='exerciseName' type='text' value={this.state.routineTemplate[i].exercise||''} onChange={this.handleExerciseChange.bind(this, i)} required></input>
+                        </div>
+                        <div className='buttonsDiv'>
+                            <div className='buttonDiv'>
+                                <button className='generalButton' value='up' type='button' onClick={this.onUp.bind(this, i)}>Earlier</button>
+                            </div>
+                            <div className='buttonDiv'>
+                                <button className='generalButton' value='down' type='button' onClick={this.onDown.bind(this, i)}>Later</button>
+                            </div>
+                            <div className='buttonDiv'>
+                                <button className='deleteButton' value='remove' type='button' onClick={this.onDelete.bind(this, i)}>Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='col-md-6 exerciseColDiv'>
+                        <div className='exerciseSetsDiv'>
+                            <label htmlFor='setsGoal'>Sets</label>
+                            <input className='form-control' id='setsGoal' type='number' min='0' max='100000' value={this.state.routineTemplate[i].sets||''} onChange={this.handleSetChange.bind(this, i)} required></input>
+                        </div>
+                        <div className='exerciseRepsDiv'>
+                            <label htmlFor='repsGoal'>Reps</label>
+                            <input className='form-control' id='repsGoal' type='number' min='0' max='100000' value={this.state.routineTemplate[i].reps||''} onChange={this.handleRepChange.bind(this, i)} required></input>
+                        </div>
+                        <div className='exerciseRestDiv'>
+                            <label htmlFor='restGoal'>Rest (seconds)</label>
+                            <input className='form-control' id='restGoal' type='number' min='0' max='100000' value={this.state.routineTemplate[i].rest||''} onChange={this.handleRestChange.bind(this, i)} required></input>
                         </div>
                     </div>
                 </div>
@@ -229,7 +265,7 @@ export default class RoutinesManager extends Component{
                         {this.routinePlan()}
                         <div className='row'>
                             <div className='col-md-4'>
-                                <button className='generalButton fullButton' type='button' value='lift' onClick={this.onAdd.bind(this)}>Add Lift</button>
+                                <button className='startButton fullButton' type='button' value='lift' onClick={this.onAdd.bind(this)}>Add Lift</button>
                             </div>
                             <div className='col-md-4'>
                             <button className='generalButton fullButton' type='submit'>Finished</button>
@@ -252,7 +288,7 @@ export default class RoutinesManager extends Component{
                         {this.routinePlan()}
                         <div className='row'>
                             <div className='col-md-4'>
-                                <button className='generalButton fullButton' type='button' value='lift' onClick={this.onAdd.bind(this)}>Add Lift</button>
+                                <button className='startButton fullButton' type='button' value='lift' onClick={this.onAdd.bind(this)}>Add Lift</button>
                             </div>
                             <div className='col-md-4'>
                                 <button className='generalButton fullButton' type='submit'>Update</button>

@@ -19,20 +19,17 @@ const Routine = props => (
             <form>
                 <div className='buttonsDiv'>
                     <div className='buttonDiv'>
-                    {props.userAuthor && <Link className='startButton fullButton' onClick={()=>{props.setActiveID('activeRoutineID',props.routine._id)}} to={{pathname:'/workout'}}>Start Session</Link>}
-
+                    {props.userAuthor && <Link className='startButton' onClick={()=>{props.setActiveID('activeRoutineID',props.routine._id)}} to={{pathname:'/workout'}}>Start Session</Link>}
                     </div>
                     <div className='buttonDiv'>
-                    {props.userAuthor && <Link className='generalButton fullButton' onClick={()=>{props.setActiveID('activeRoutineID',props.routine._id)}} to={'/routineedit'}>Edit</Link>}
-
+                    {props.userAuthor && <Link className='generalButton' onClick={()=>{props.setActiveID('activeRoutineID',props.routine._id)}} to={'/routineedit'}>Edit</Link>}
                     </div>
                     <div className='buttonDiv'>
-                    {props.userAuthor && <button className='deleteButton fullButton' type='button' onClick={()=>{props.deleteRoutine(props.routine._id)}}>Delete</button>}
-
+                    {props.userAuthor && <button className='deleteButton' type='button' onClick={()=>{props.deleteRoutine(props.routine._id)}}>Delete</button>}
                     </div>
                 </div>
                 <div className='buttonsDiv'>
-                    {props.userAuthor === false && <button className='generalButton fullButton' type='submit' onClick={()=>{props.copyRoutine(props.index)}}>Grab a Copy</button>}
+                    {props.userAuthor === false && <button className='generalButton' type='submit' onClick={()=>{props.copyRoutine(props.index)}}>Grab a Copy</button>}
                 </div>
             </form>
         </div>

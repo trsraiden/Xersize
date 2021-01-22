@@ -43,6 +43,7 @@ hr{
 }
 
 .buttonsDiv{
+    padding-top: 15px;
     width: 100%;
     display: inline-flex;
     justify-content: space-around;
@@ -329,11 +330,11 @@ hr{
 
 /* start routine manager */
 
-.exerciseNameColDiv{
+/* .exerciseNameColDiv{
     position:relative;
-    min-height: 125px;
+    min-height: 225px;
     width: 90%;
-}
+} */
 
 .exerciseColDiv{
     position:relative;
@@ -341,11 +342,21 @@ hr{
     width: 90%;
 }
 
-.exerciseNameDiv{
+/* .exerciseNameDiv{
     position:absolute;
+    bottom:68%;
+    width:90%;
+} */
+
+/* .routineManagerButtonsDiv{
+    position: absolute;
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-around;
     bottom:34%;
     width:90%;
-}
+} */
+
 
 .exerciseSetsDiv{
     position:absolute;
