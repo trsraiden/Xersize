@@ -82,7 +82,7 @@ export default function ChangePassword() {
                 </div>
             </Container>
             <Container className='d-flex align-items-center justify-content-center' style={{maxWidth:'500px'}}>
-                <Link className='deleteButton w-100' to='/manageaccount'>Cancel Changes</Link> 
+                <Link className='deleteButton w-100' to='/manageaccount'>Cancel</Link> 
             </Container>
         </div>
     )

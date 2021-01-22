@@ -117,7 +117,7 @@ export default class RoutineDash extends Component{
     showCommunityRoutines(){
         return(
             this.state.communityRoutines.length === 0 ? 
-            <h5 className='robotoSection newRoutine'>...loading? 😅</h5> 
+            <h5 className='robotoSection newRoutine'>... just as soon as the community starts making them!</h5> 
             :<div className='row'>
                 {this.state.communityRoutines.map((routine,index) => {
                     return( 

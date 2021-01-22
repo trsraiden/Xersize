@@ -70,7 +70,7 @@ hr{
     border-radius: .5rem;
 }
 
-@media screen and (min-width: 400px){
+@media screen and (max-width: 400px){
     .setTimerDiv{
         left:0;
         right:0;
@@ -114,6 +114,7 @@ hr{
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     color: #6DF0F5;
     border-color: #6df0f5;
+    width:100%;
 }
 
 .generalButton:focus, .generalButton:active {
@@ -144,6 +145,7 @@ hr{
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     color: #D11C1C;
     border-color: #D11C1C;
+    width:100%;
 }
 
 .deleteButton:focus, .deleteButton:active {
@@ -174,6 +176,7 @@ hr{
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     color: #00eb4d;
     border-color: #00eb4d;
+    width:100%;
 }
 
 .startButton:focus, .startButton:active {
@@ -276,7 +279,7 @@ hr{
 
 /* end welcome.component.js */
 
-/* start narbar.component.js */
+/* start navbar.component.js */
 .navLogoutButton{
     margin: 0px;
     border: none;
@@ -328,7 +331,7 @@ hr{
     margin:0px 0px 5px;
 }
 
-/* end narbar.component.js */
+/* end navbar.component.js */
 
 /* start Home.js */
 .homeIcon{
@@ -350,6 +353,86 @@ hr{
     border: 10px;
 }
 /* end Home.js */
+
+/* start routine manager */
+
+.exerciseNameColDiv{
+    position:relative;
+    min-height: 125px;
+    width: 90%;
+}
+
+.exerciseColDiv{
+    position:relative;
+    min-height: 270px;
+    width: 90%;
+}
+
+.exerciseNameDiv{
+    position:absolute;
+    bottom:34%;
+    width:90%;
+}
+
+.exerciseSetsDiv{
+    position:absolute;
+    bottom:68%;
+    width:90%;
+}
+
+.exerciseRepsDiv{
+    position:absolute;
+    bottom: 34%;
+    width:90%;
+}
+
+.exerciseRestDiv{
+    position:absolute;
+    bottom:0;
+    width:90%;
+}
+
+.exerciseEarlierDiv{
+    position:absolute;
+    bottom:68%;
+    min-height: 84.12px;
+    width: 90%;
+}
+
+.exerciseEarlier{
+    position:absolute;
+    bottom:0%;
+    margin: 0;
+}
+
+.exerciseLaterDiv{
+    position:absolute;
+    bottom: 34%;
+    min-height: 84.12px;
+    width: 90%;
+    margin: 0;
+}
+
+.exerciseLater{
+    position:absolute;
+    bottom: 0%;
+    margin: 0;
+}
+
+.exerciseDeleteDiv{
+    position:absolute;
+    bottom: 0%;
+    width: 90%;
+    margin: 0;
+}
+
+.exerciseDelete{
+    position:absolute;
+    bottom: 0%;
+    margin: 0;
+}
+
+/* end routine manager */
 
 /* start Footer.js */
 .footer{
