@@ -114,7 +114,7 @@ hr{
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     color: #6DF0F5;
     border-color: #6df0f5;
-    width:100%;
+    /* width:100%; */
 }
 
 .generalButton:focus, .generalButton:active {
@@ -145,7 +145,7 @@ hr{
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     color: #D11C1C;
     border-color: #D11C1C;
-    width:100%;
+    /* width:100%; */
 }
 
 .deleteButton:focus, .deleteButton:active {
@@ -176,7 +176,7 @@ hr{
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     color: #00eb4d;
     border-color: #00eb4d;
-    width:100%;
+    /* width:100%; */
 }
 
 .startButton:focus, .startButton:active {

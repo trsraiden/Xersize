@@ -80,10 +80,10 @@ export default class RoutinesManager extends Component{
                     </div>
                     <div className='col-md-4 exerciseColDiv'>
                         <div className='exerciseEarlierDiv'>
-                            <button className='generalButton exerciseEarlier' value='up' type='button' onClick={this.onUp.bind(this, i)}>Make Earlier</button>
+                            <button className='generalButton exerciseEarlier' value='up' type='button' onClick={this.onUp.bind(this, i)}>Earlier</button>
                         </div>
                         <div className='exerciseLaterDiv'>
-                            <button className='generalButton exerciseLater' value='down' type='button' onClick={this.onDown.bind(this, i)}>Make Later</button>
+                            <button className='generalButton exerciseLater' value='down' type='button' onClick={this.onDown.bind(this, i)}>Later</button>
                         </div>
                         <div className='exerciseDeleteDiv'>
                             <button className='deleteButton exerciseDelete' value='remove' type='button' onClick={this.onDelete.bind(this, i)}>Delete Exercise</button>
