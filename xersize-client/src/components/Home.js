@@ -3,8 +3,8 @@ import React from 'react';
 export default function Home(props) {
     return(
         <div className='container'>
-            <h1>Hi {props.user}!</h1>
-            <span className='robotoSection' >Welcome to the Xersize Tracker web app!</span>
+            <p>Hi {props.user}!</p>
+            <p className='robotoSection' >Welcome to the Xersize web app!</p>
             <div className='appSection row'>
                 <div className='homeSectionDiv col-md-4'>
                     <h2 className='markerSection' >Routines</h2>

@@ -200,31 +200,37 @@ hr{
 
 /* start welcome.component.js */
 .welcomeDisplay{
+    padding-top: 3rem;
     display: flex;
     flex-wrap: wrap;
 }
 
 .welcomeWebTitle {
-    padding:3rem 0 0;
+    /* padding:3rem 0 0; */
     font-family: Audiowide, cursive;
-    text-shadow: -5px 1px 3px #6df0f5,-7px 2px 0px #D11C1C;
+    /* original */
+    /* text-shadow: -5px 1px 3px #6df0f5,-7px 2px 0px #D11C1C; */
+    /* original */
+    text-shadow: -3px 1px 4px #6df0f5,-5px 2px 3px #00eb4d, -7px 4px 2px #D11C1C;
+    text-shadow: -3px 1px #6df0f5,-5px 2px #00eb4d, -7px 4px #D11C1C;
     text-align: center;
     font-size: 5rem;
 }
 
 .welcomeGreetingDiv {
-    padding:2rem 0 3rem;
+    /* padding:2rem 0 3rem; */
     text-align: center;
 }
 
 .welcomeWebGreeting {
-    padding:2rem;
+    padding:3rem;
     font-family: Audiowide, cursive;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .enterAppDiv {
-    padding:2rem 0 3rem;
+    /* padding:2rem 0 3rem; */
+    padding:0 0 1rem;
 }
 
 /* end welcome.component.js */
@@ -244,7 +250,7 @@ hr{
 .navWebTitle {
     color: #ffffff;
     font-family: Audiowide, cursive;
-    text-shadow: -5px 1px 3px #6DF0F5,-7px 2px 0px #D11C1C;
+    text-shadow: -3px 1px 4px #6df0f5,-5px 2px 3px #00eb4d, -7px 4px 2px #D11C1C;
     text-align: center;
     display: inline-block;
     padding-top: .3125rem;
@@ -268,7 +274,7 @@ hr{
 .navLink:hover{
     text-decoration: none;
     color: #ffffff;
-    text-shadow: -5px 1px 3px #6DF0F5,-7px 2px 3px #D11C1C;
+    text-shadow: -3px 1px 4px #6df0f5,-5px 2px 3px #00eb4d, -7px 4px 2px #D11C1C;
 }
 
 .navbarColour{
