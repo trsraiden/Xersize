@@ -4,9 +4,6 @@ import {Link} from 'react-router-dom';
 import {Line} from 'react-chartjs-2';
 
 const Session = props => (
-    // <div key={props.index} className='col-sm-3 cardStyling'>
-    //     <div className='cardBody sessionCard'>
-
     <div key={props.index} className='col-md-4 cardStyling'>
         <div className='cardBody'>
             <h5 >{props.session.weekDay} {props.session.month} {props.session.day}</h5>
@@ -23,7 +20,7 @@ const Session = props => (
                     <div className='buttonDiv'>
                         <Link className='generalButton' onClick={()=>props.setActiveID('activeSessionID', props.session._id)} to={'/workoutedit'}>Edit/Review</Link>
                     </div>
-                    <div className='buttonDiv'>
+                    <div className='searchButtonDiv'>
                         <button className='deleteButton' type='button' onClick={()=>{props.deleteSession(props.session._id)}}>Delete</button>
                     </div>
                 </div>
@@ -112,15 +109,15 @@ export default class SessionsDashboard extends Component{
                 <h2>Review Range</h2>
                 <form onSubmit={this.onSearch.bind(this)}>
                 <div className='row dateSearchDiv'>
-                    <div className='col-sm-5'>
+                    <div className='col-md-5'>
                         <label htmlFor='earlierDate'>From:</label>
                         <input id='earlierDate' type='date' className='form-control' onChange={this.handleDateChange.bind(this)} required></input>
                     </div>
-                    <div className='col-sm-5'>
+                    <div className='col-md-5'>
                     <label htmlFor='laterDate'>To:</label>
                         <input id='laterDate' type='date' className='form-control' onChange={this.handleDateChange.bind(this)} required></input>
                     </div>
-                    <div className='col-sm-2 buttonsDiv'>
+                    <div className='col-md-2 dateSearchButtonDiv'>
                         <button className='generalButton dateSearchButton'>Search</button>
                     </div>
                 </div>

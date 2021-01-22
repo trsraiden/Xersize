@@ -30,28 +30,28 @@ export default class RoutinesManager extends Component{
                         <input className='form-control' id='exerciseName' type='text' value={this.state.routineTemplate[i].exercise||''} onChange={this.handleExerciseChange.bind(this, i)} required></input>
                     <div className='container'>
                         <div className='row'>
-                            <div className='col-sm-4'>
+                            <div className='col-md-4'>
                                 <label htmlFor='setsGoal'>Sets</label>
                                 <input className='form-control' id='setsGoal' type='number' min='0' max='100000' value={this.state.routineTemplate[i].sets||''} onChange={this.handleSetChange.bind(this, i)} required></input>
                             </div>
-                            <div className='col-sm-4'>
+                            <div className='col-md-4'>
                                 <label htmlFor='repsGoal'>Reps</label>
                                 <input className='form-control' id='repsGoal' type='number' min='0' max='100000' value={this.state.routineTemplate[i].reps||''} onChange={this.handleRepChange.bind(this, i)} required></input>
                             </div>
-                            <div className='col-sm-4'>
+                            <div className='col-md-4'>
                                 <label htmlFor='restGoal'>Rest (seconds)</label>
                                 <input className='form-control' id='restGoal' type='number' min='0' max='100000' value={this.state.routineTemplate[i].rest||''} onChange={this.handleRestChange.bind(this, i)} required></input>
                             </div>
                         </div>
                     </div>
                     <div className='row'>
-                        <div className='col-sm-4'>
+                        <div className='col-md-4'>
                             <button className='generalButton' value='up' type='button' onClick={this.onUp.bind(this, i)}>Make Earlier</button>
                         </div>
-                        <div className='col-sm-4'>
+                        <div className='col-md-4'>
                             <button className='generalButton' value='down' type='button' onClick={this.onDown.bind(this, i)}>Make Later</button>
                         </div>
-                        <div className='col-sm-4'>
+                        <div className='col-md-4'>
                             <button className='deleteButton' value='remove' type='button' onClick={this.onDelete.bind(this, i)}>Delete Exercise</button>
                         </div>
                     </div>
@@ -228,13 +228,13 @@ export default class RoutinesManager extends Component{
                         <hr></hr>
                         {this.routinePlan()}
                         <div className='row'>
-                            <div className='col-sm-4'>
+                            <div className='col-md-4'>
                                 <button className='generalButton' type='button' value='lift' onClick={this.onAdd.bind(this)}>Add Lift</button>
                             </div>
-                            <div className='col-sm-4'>
+                            <div className='col-md-4'>
                             <button className='generalButton' type='submit'>Finished</button>
                             </div>
-                            <div className='col-sm-4'>
+                            <div className='col-md-4'>
                                 <button className='deleteButton' type='button' onClick={this.onCancel} >Cancel</button>
                             </div>
                         </div>
@@ -251,13 +251,13 @@ export default class RoutinesManager extends Component{
                         <hr></hr>
                         {this.routinePlan()}
                         <div className='row'>
-                            <div className='col-sm-4'>
+                            <div className='col-md-4'>
                                 <button className='generalButton' type='button' value='lift' onClick={this.onAdd.bind(this)}>Add Lift</button>
                             </div>
-                            <div className='col-sm-4'>
+                            <div className='col-md-4'>
                                 <button className='generalButton' type='submit'>Update</button>
                             </div>
-                            <div className='col-sm-4'>
+                            <div className='col-md-4'>
                                 <button className='deleteButton' type='button' onClick={this.onCancel} >Cancel</button>
                             </div>
                         </div>

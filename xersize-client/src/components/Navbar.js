@@ -28,10 +28,10 @@ export default function Navigation(props){
             <Link to="/home" className="navWebTitle">Xersize</Link>
             <ul className="navbar-nav ml-auto">
                 <li className="markerSection navbar-item">
-                    <Link to="/sessions" className="navLink">Sessions</Link>
+                    <Link to="/routines" className="navLink">Routines</Link>
                 </li>
                 <li className="markerSection navbar-item">
-                    <Link to="/routines" className="navLink">Routines</Link>
+                    <Link to="/sessions" className="navLink">Sessions</Link>
                 </li>
                 <li className="markerSection navbar-item">
                     <Link to="/manageAccount" className="navLink">Manage {props.user}</Link>

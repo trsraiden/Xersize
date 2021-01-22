@@ -33,10 +33,10 @@ export default class SessionManager extends Component{
                 <div className='form-group'>
                     <h2>{exercise.exercise} - Rest {exercise.rest} after each set</h2>
                     <div className='row'>
-                        <div className='col-sm-2'>
+                        <div className='col-md-2'>
                             <h2>Weight:</h2>
                         </div>
-                        <div className='col-sm-2'>
+                        <div className='col-md-2'>
                             <input className='form-control' type='number' min='0' max='100000' id='setsWeight' value={this.state.sessionDetails[index].weight||''} onChange={this.handleWeightInput.bind(this,index)} required></input>
                         </div>
                     </div>
@@ -44,10 +44,10 @@ export default class SessionManager extends Component{
                         {exercise.reps.map((rep,set)=>{
                             return(
                                 <div className='row' key={index+'-'+set}>
-                                    <div className='col-sm-2'>
+                                    <div className='col-md-2'>
                                         <h5>Set {set+1}:</h5>
                                     </div>
-                                    <div className='col-sm-3'>
+                                    <div className='col-md-3'>
                                         <label>Reps</label>
                                         <div className='setRepsDiv'>
                                             <button onClick={this.handleRepsIncrease.bind(this,index,set)} type='button' className='startButton increaseReps'>+</button> 
@@ -57,7 +57,7 @@ export default class SessionManager extends Component{
                                             <button onClick={this.handleRepsDecrease.bind(this,index,set)} type='button' className='deleteButton decreaseReps'>-</button>
                                         </div>
                                     </div>
-                                    <div className='col-sm-6'>
+                                    <div className='col-md-6'>
                                         <label htmlFor='setNotes'>Notes</label>
                                         <input className='form-control' id='setNotes' value={this.state.sessionDetails[index].notes[set]||''} onChange={this.handleNotesInput.bind(this,index,set)}></input>
                                     </div>
@@ -311,7 +311,7 @@ export default class SessionManager extends Component{
                 <form onSubmit={this.onEndSession.bind(this)}>
                     {this.sessionPlan()}
                     <div className='row'>
-                        <div className='col-sm-6'>
+                        <div className='col-md-6'>
                             <label htmlFor='sessionNotes'>Session Notes</label>
                             <input className='form-control' id='sessionNotes' value={this.state.sessionNotes} type='text' onChange={this.handleSessionNotes.bind(this)} ></input>                    
                         </div>
@@ -322,7 +322,7 @@ export default class SessionManager extends Component{
                 <form onSubmit={this.onUpdate.bind(this)}> 
                     {this.sessionPlan()}
                     <div className='row'>
-                        <div className='col-sm-6'>
+                        <div className='col-md-6'>
                             <label htmlFor='sessionNotes'>Session Notes</label>
                             <input className='form-control' id='sessionNotes' value={this.state.sessionNotes} type='text' onChange={this.handleSessionNotes.bind(this)} ></input>                    
                         </div>

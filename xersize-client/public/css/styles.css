@@ -7,18 +7,9 @@
 hr{
     background-color: #D11C1C;
     height: 4px;
-    /* need to do the className styling for hrs to get it to take size 4px */
 }  
 
 .notices{
-    text-align: center;
-}
-
-.sessions7Days{
-    width: 100%;
-}
-
-.sessionsChartTitle{
     text-align: center;
 }
 
@@ -34,10 +25,6 @@ hr{
     font-family: Roboto Condensed, sans-serif;
 }
 
-.btn {
-    margin: 15px;
-}
-
 .setRepsDiv{
     text-align: center;
 }
@@ -51,50 +38,10 @@ hr{
     font-size: 1.25rem;
 }
 
-.increaseReps{
-    float: left;
-}
-
-.decreaseReps{
-    float: right;
-}
-/* session timer */
-.setTimerDiv{
-    text-align: center;
-    position: fixed;
-    bottom:0;
-    left:20%;
-    right:20%;
-    margin: auto;
-    border: 5px solid #D11C1C;
-    border-radius: .5rem;
-}
-
-@media screen and (max-width: 500px){
-    .setTimerDiv{
-        left:0;
-        right:0;
-    }
-}
-
-.timerDiv{
-    display:inline-block;
-    margin:0 2px;
-    min-width: 120px;
-}
-
-.chartDiv{
-    background-color: #ffffff;
-}
-
 .buttonsDiv{
     width: 100%;
     display: inline-flex;
     justify-content: space-around;
-}
-
-.buttonDiv{
-    display: flex;
 }
 
 .generalButton{
@@ -114,7 +61,6 @@ hr{
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     color: #6DF0F5;
     border-color: #6df0f5;
-    /* width:100%; */
 }
 
 .generalButton:focus, .generalButton:active {
@@ -145,7 +91,6 @@ hr{
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     color: #D11C1C;
     border-color: #D11C1C;
-    /* width:100%; */
 }
 
 .deleteButton:focus, .deleteButton:active {
@@ -354,6 +299,30 @@ hr{
 }
 /* end Home.js */
 
+/* start session dashboard */
+
+.dateSearchDiv{
+    margin-bottom: 20px;
+}
+
+.dateSearchButtonDiv{
+    min-height: 47px;
+    margin-top: 32px; 
+}
+
+.dateSearchButton{
+    position:absolute;
+    width: 94%;
+    margin:15px 0 0 0;
+    bottom:0%;
+}
+
+.sessionsChartTitle{
+    text-align: center;
+}
+
+/* end session dashboard */
+
 /* start routine manager */
 
 .exerciseNameColDiv{
@@ -433,6 +402,41 @@ hr{
 }
 
 /* end routine manager */
+
+/* start session manager */
+.setTimerDiv{
+    text-align: center;
+    position: fixed;
+    bottom:0;
+    left:20%;
+    right:20%;
+    margin: auto;
+    border: 5px solid #D11C1C;
+    border-radius: .5rem;
+}
+
+@media screen and (max-width: 500px){
+    .setTimerDiv{
+        left:0;
+        right:0;
+    }
+}
+
+.increaseReps{
+    float: left;
+}
+
+.decreaseReps{
+    float: right;
+}
+
+.timerDiv{
+    display:inline-block;
+    margin:0 2px;
+    min-width: 120px;
+}
+
+/* end session manager */
 
 /* start Footer.js */
 .footer{

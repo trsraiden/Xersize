@@ -1,7 +1,7 @@
 import React, {useRef, useState, useEffect} from 'react'
 import {Container,Form, Alert} from 'react-bootstrap'
 import {useUser} from '../contexts/UserSessionContext'
-import {Link, useHistory} from 'react-router-dom'
+import {useHistory} from 'react-router-dom'
 
 export default function Login() {
   const emailRef = useRef()
@@ -45,9 +45,17 @@ export default function Login() {
     }
   }
 
+  function handleReset() {
+    history.push('/forgotpassword')
+  }
+
+  function handleSignup() {
+    history.push('/signup')
+  }
+
   return (
     <div className='welcomeDisplay markerSection'>
-        <div className='col-sm-5' >
+        <div className='col-md-5' >
               <div>
                   <h1 className='welcomeWebTitle robotoSection' >Xersize</h1>
               </div>
@@ -56,7 +64,7 @@ export default function Login() {
                   <p className='welcomeWebGreeting' >Start tracking your journey today!</p>
               </div>                
         </div>
-        <div className='enterAppDiv col-sm-7' >
+        <div className='enterAppDiv col-md-7' >
         <Container className='d-flex align-items-center justify-content-center' style={{maxWidth:'500px'}}>
             <div className='w-100'>
               <h2 className='w-100 text-center mt-2'>Log In</h2>
@@ -76,8 +84,8 @@ export default function Login() {
           </div>
         </Container>
         <div className='w-100 text-center mt-2'>
-          <Link className='navLink' to='/forgotPassword'>Forgot your password?</Link>
-          <p>Don't have an account? <Link className='navLink' to='/signup'>Sign Up</Link></p>
+          <p>Forgot your password? <button disabled={loading} onClick={handleReset} className='generalButton'>Reset</button></p>
+          <p>Don't have an account? <button disabled={loading} onClick={handleSignup} className='startButton'>Sign Up</button></p>
         </div> 
         </div>
       </div>
