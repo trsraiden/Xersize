@@ -206,12 +206,7 @@ hr{
 }
 
 .welcomeWebTitle {
-    /* padding:3rem 0 0; */
     font-family: Audiowide, cursive;
-    /* original */
-    /* text-shadow: -5px 1px 3px #6df0f5,-7px 2px 0px #D11C1C; */
-    /* original */
-    text-shadow: -3px 1px 4px #6df0f5,-5px 2px 3px #00eb4d, -7px 4px 2px #D11C1C;
     text-shadow: -3px 1px #6df0f5,-5px 2px #00eb4d, -7px 4px #D11C1C;
     text-align: center;
     font-size: 5rem;
